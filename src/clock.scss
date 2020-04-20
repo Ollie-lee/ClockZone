@@ -6,7 +6,7 @@
 
     &-date {
         background-color: #cf7256;
-        display: inline-block;
+        
         text-align: center;
         font-size: 0.5rem;
         padding: .25rem .5rem;
@@ -15,18 +15,22 @@
     }
 
     &-time{
-        margin: .5rem 0;
+        padding: 1rem 1rem;
 
         &-hour {
             background-color: #cf7256;
+            padding: .25rem;
+
         }
     
         &-min {
             background-color: #cf7256;
+            padding: .25rem;
         }
     
         &-sec {
             background-color: #cf7256;
+            padding: .25rem;
         }
     }
 }
