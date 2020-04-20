@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Clock.css";
+import './clock.css';
 
 class Clock extends React.Component {
   constructor(props) {
@@ -9,11 +9,11 @@ class Clock extends React.Component {
       min: new Date().getMinutes(),
       sec: new Date().getSeconds(),
       day: new Date().toLocaleString(),
-      
-      
+
+
     };
 
-    
+
   }
 
   componentDidMount() {
@@ -23,8 +23,8 @@ class Clock extends React.Component {
         min: new Date().getMinutes(),
         sec: new Date().getSeconds(),
         day: new Date().toDateString(),
-        
-        
+
+
       });
     }, 1000);
   }
@@ -35,9 +35,9 @@ class Clock extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>{this.state.day} {this.state.year}</span><br/>
-        <span>{this.state.hour}</span> : <span>{this.state.min}</span> : <span>{this.state.sec}</span>
+      <div className='clock'>
+        <div className='clock-date'><span>{this.state.day} {this.state.year}</span></div><br />
+        <div className='clock-time'><span className='clock-time-hour'>{this.state.hour}</span> : <span className='clock-time-min'>{this.state.min}</span> : <span className='clock-time-sec'>{this.state.sec}</span></div>
       </div>
     );
   }

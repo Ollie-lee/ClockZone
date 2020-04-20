@@ -1,0 +1,32 @@
+.clock {
+    background-color: #fb8966;
+    display: inline-block;
+    color: white;
+    text-align: center;
+
+    &-date {
+        background-color: #cf7256;
+        display: inline-block;
+        text-align: center;
+        font-size: 0.5rem;
+        padding: .25rem .5rem;
+
+
+    }
+
+    &-time{
+        margin: .5rem 0;
+
+        &-hour {
+            background-color: #cf7256;
+        }
+    
+        &-min {
+            background-color: #cf7256;
+        }
+    
+        &-sec {
+            background-color: #cf7256;
+        }
+    }
+}
